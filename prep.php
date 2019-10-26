@@ -63,7 +63,7 @@ switch ($step) {
 
   case 1:
     echo "Step 1<hr />";
-    echo "In <strong>mdie/connect.php</strong> and <strong>mdie/meekrodb.php</strong> to enter MySQL details.<br />";
+    echo "In <strong>mdie/connect.php</strong>, <strong>mdie/meekrodb.php</strong>, and <strong>search.php</strong> to enter MySQL details.<br />";
     echo "So you will have wanted to create a user/database specifically for MDIE. (Grant all for the install and then max CREATE, INSERT, SELECT, UPDATE).";
     echo "<br /><br />Step 1 must be complete to complete step 2.";
     echo "<br /><br /><a href=\"?step=2\">Click for Step 2</a>";
