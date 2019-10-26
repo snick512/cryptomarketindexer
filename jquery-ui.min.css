@@ -96,8 +96,8 @@
 }
 .ui-autocomplete {
  position:absolute;
- top:5%;
- left:10%;
+ top:8%;
+ right:0%;
  cursor:default;
  overflow-y: scroll;
  height: 75%;
