@@ -32,7 +32,7 @@ $(function() {
         <a class="nav-link" href="https://github.com/snick512/cryptomarketindexer">Github</a>
       </li>
       <li class="nav-item">
-        <a class="navi-link" href="https://github.com/snick512/cryptomarketindexer/issues">Issue/Request</a>
+        <a class="nav-link" href="https://github.com/snick512/cryptomarketindexer/issues">Issue/Request</a>
       </li>
     </ul>
     <form action="fromsearch.php" method="get" class="form-inline my-2 my-lg-0">
