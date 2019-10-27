@@ -14,6 +14,8 @@ Thanks to MeekroDB and Coin Gecko.
 * Get by-the-minute updates on up to 90 cryptocurrencies straight to your desktop.
 * Add/remove coins
 
+![alt text](https://urcpu.com/~snick/h.png "CMI")
+
 Version 0.1.6.1005
 
 ..._more features on the way, checkout the testing branch when it's available_
