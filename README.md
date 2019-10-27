@@ -13,6 +13,7 @@ Thanks to MeekroDB and Coin Gecko.
 
 * Get by-the-minute updates on up to 90 cryptocurrencies straight to your desktop.
 * Add/remove coins
+* Basic share management (buy/sell)
 
 ![alt text](https://urcpu.com/~snick/h.png "CMI")
 
