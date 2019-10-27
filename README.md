@@ -2,6 +2,9 @@
 
 **Cryptocurrency Market Indexer is an old-fashioned crawler which asks services about their data and then stores it. From there, any application can access the SQL data and even update it.**
 
+
+![alt text](https://urcpu.com/~snick/m.png "CMI")
+
 **Meant to be used on private net**
 
 Thanks to MeekroDB and Coin Gecko.
