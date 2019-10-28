@@ -62,10 +62,17 @@ DB::$throw_exception_on_error = "true";
       //  $mysqli_profit_update = DB::query("UPDATE coinlist SET profit= profit + %i WHERE slug=%s", $sell_now, $sellslug);
         //$mysqli_cash_total = DB::query("UPDATE cash SET cash=%s", $cash_now);
 
-
-//echo "<hr />Sold <font color=\"red\">$sell</font> shares of $name_now at value $sellprice_output. <br />Current shares: <font color=\"green\">$owned_final</font> <br />Return: <font color=\"orange\">$sell_now</font> | Gain: -/+ <font color=\"orange\">$cash_a_now</font><br />Cash: <font color=\"white\">$cash_now</font><hr />";
-echo "<div class=\"alert alert-dismissible alert-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">Shares Sold</button>Sold shares of $name_now at value $sellprice_output. <br />Current shares: $owned_final<br />Return: $sell_now | Gain: -/+ $cash_a_now<br />Cash: $cash_now</div>";
-
+//echo "<div class=\"alert alert-dismissible alert-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">Shares Sold</button>Sold shares of $name_now at value $sellprice_output. <br />Current shares: $owned_final<br />Return: $sell_now | Gain: -/+ $cash_a_now<br />Cash: $cash_now</div>";
+?>
+<br /><center>
+<div class="card border-success mb-3" style="max-width: 90%;">
+  <div class="card-header"><p class="text-info">Sold at market value <?php echo $sellprice_output; ?></p></div>
+  <div class="card-body">
+    <h4 class="card-title"><?php echo $name_now; ?></h4>
+    <p class="card-text"><?php echo "$sell_now ($sell shares) of $name_now purchased."; ?><br /><br />Cash now: $<?php echo number_format($cash_now); ?></p>
+  </div>
+</div></center>
+<?php
     // insert adjustment
 
   } catch(MeekroDBException $e) {
@@ -92,9 +99,10 @@ try {
       // sell @ current rate
       $buy_now = $buyprice_output * $buy;
 
-  $mysqli_owned = DB::queryRaw("SELECT owned from coinlist where slug=%s", $buyslug);
+  $mysqli_owned = DB::queryRaw("SELECT owned,name from coinlist where slug=%s", $buyslug);
   $owned = $mysqli_owned->fetch_assoc();
   $owned_now = $owned["owned"];
+  $owned_name = $owned["name"];
   //$owned = preg_replace('/[^0-9]/', '', $ownednow - $sell);
   $owned_final = $owned_now + $buy;
 
@@ -109,8 +117,16 @@ try {
   //$mysqli_profit_update = DB::query("UPDATE coinlist SET profit= profit - %i WHERE slug=%s", $buy_now, $buylslug);
   //$mysqli_cash_total = DB::query("UPDATE cash SET cash=%s", $cash_now);
 
-echo "<hr />Bought $buy shares of $buyslug at value $buyprice_output. <br />Current shares: $owned_final <br />Loss: $buy_now <br />Cash: $cash_now<hr />";
-
+//echo "<hr />Bought $buy shares of $buyslug at value $buyprice_output. <br />Current shares: $owned_final <br />Loss: $buy_now <br />Cash: $cash_now<hr />";
+?><br /><center>
+<div class="card border-success mb-3" style="max-width: 90%;">
+  <div class="card-header"><p class="text-info">Purchased at market value <?php echo $buyprice_output; ?></p></div>
+  <div class="card-body">
+    <h4 class="card-title"><?php echo $owned_name; ?></h4>
+    <p class="card-text"><?php echo "$buy_now ($buy shares) of $owned_name purchased."; ?><br /><br />Cash now: $<?php echo number_format($cash_now); ?></p>
+  </div>
+</div></center>
+<?php
   // insert adjustment
 
 } catch(MeekroDBException $e) {
