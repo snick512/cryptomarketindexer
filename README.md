@@ -59,6 +59,11 @@ DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 * Table optimizations
 
 
+### Known bugs
+
+* Number formats needs addressed to properly display 
+* Weird math (removed Cash option in HTML table for now)
+
 ### License
 
 BSD 3-Clause License
