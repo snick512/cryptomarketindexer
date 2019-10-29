@@ -59,7 +59,7 @@ DB::$throw_exception_on_error = "true";
 
     $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $sellslug);
     $owned = $mysqli_owned->fetch_assoc();
-    $cash_output = $cash["cash"];
+    $cash_output = $owned["cash"];
     $owned_now = $owned["owned"];
     $owned_final = $owned_now - $sell;
     $cash_now = $cash_output + $sell_now;
@@ -104,7 +104,7 @@ try {
   $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $buyslug);
   $owned = $mysqli_owned->fetch_assoc();
   $owned_now = $owned["owned"];
-  $cash_output = $cash["cash"];
+  $cash_output = $owned["cash"];
   $cash_now = $cash_output - $buy_now;
   $owned_final = $owned_now + $buy;
 

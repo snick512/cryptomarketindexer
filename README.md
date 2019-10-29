@@ -17,7 +17,7 @@ Thanks to MeekroDB and Coin Gecko.
 
 ![alt text](https://urcpu.com/~snick/h.png "CMI")
 
-Version 0.1.6.1007
+Version 0.1.6.1011
 
 ..._more features on the way, checkout the testing branch when it's available_
 
@@ -61,8 +61,7 @@ DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 
 ### Known bugs
 
-* Number formats needs addressed to properly display 
-* Weird math (removed Cash option in HTML table for now)
+* Number formats needs addressed to properly display
 
 ### License
 
