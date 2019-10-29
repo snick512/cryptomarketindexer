@@ -46,7 +46,7 @@ DB::$throw_exception_on_error = "true";
         $owned = $mysqli_owned->fetch_assoc();
         $owned_now = $owned["owned"];
         $name_now = $owned["name"];
-        $cash_output = $cash["cash"];
+        $cash_output = $owned["cash"];
         
         $cash_now = $cash_output + $sell_now;
         $owned_final = $owned_now - $sell;
@@ -92,7 +92,7 @@ try {
       $owned = $mysqli_owned->fetch_assoc();
       $owned_now = $owned["owned"];
       $owned_name = $owned["name"];
-      $cash_output = $cash["cash"];
+      $cash_output = $owned["cash"];
       $cash_now = $cash_output - $buy_now;
       $owned_final = $owned_now + $buy;
 
