@@ -17,9 +17,11 @@ Thanks to MeekroDB and Coin Gecko.
 
 ![alt text](https://urcpu.com/~snick/h.png "CMI")
 
-Version 0.1.6.1005
+Version 0.1.6.1007
 
 ..._more features on the way, checkout the testing branch when it's available_
+
+![alt text](https://urcpu.com/~snick/alertstocards.png "CMI")
 
 # Requirements
 
@@ -56,6 +58,11 @@ DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 * History (kinda already finished)
 * Table optimizations
 
+
+### Known bugs
+
+* Number formats needs addressed to properly display 
+* Weird math (removed Cash option in HTML table for now)
 
 ### License
 
