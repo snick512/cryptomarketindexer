@@ -48,8 +48,8 @@ try {
 <br />
 
 
-
-<div class="card border-warning mb-3">
+<center>
+<div class="card border-warning mb-3" style="max-width: 90%;">
 <h3 class="card-header"><?php echo "$f_name"; ?></h3>
 <div class="card-body">
   <h5 class="card-title">$<?php echo number_format($cash); ?></h5>
@@ -83,7 +83,7 @@ try {
 <p class="text-info">Currently pulling data from <?php echo "$exchangename"; ?></p>
 </div>
 </div>
-
+</center>
 
 
 
