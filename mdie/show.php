@@ -17,8 +17,6 @@ function noshow($params) {
   $sql = "SELECT * FROM coinlist";//desc LIMIT 1
   $result = $conn->query($sql);
 
-
-
   echo "<div id=\"pricetable\"><table class=\"table table-hover\">";
 
   if ($result->num_rows > 0) {
@@ -36,11 +34,11 @@ function noshow($params) {
         $coinc = $row["crawl"];
         $coino = number_format($row["owned"], 3);
         $coinf = number_format($row["cash"], 2);
+        $coinl = $row["infoimage"];
 
 // is this coin to be displayed?
         if ($coinc == 0) {
         //  echo "$coinn ($coini $coinx) skipped\n";
-
 
         } else {
 
@@ -59,7 +57,7 @@ function noshow($params) {
           $coino_total_a = $coino * $showdata_usd;
           $coino_total = $coino_total_a;
 
-            echo "<td><a href=\"history.php?c=$coini\"><span class=\"badge badge-pill badge-secondary\">history</span></a> <font color=\"orange\">$coinn</font></td>";
+            echo "<td><img src=\"mdie/images/coins/$coinl\" width=\"25px\"> <a href=\"history.php?c=$coini\"><span class=\"badge badge-pill badge-secondary\">history</span></a> <font color=\"orange\">$coinn</font></td>";
             echo "<td><font color=\"gray\">$showdata_coinpair</font></td>";
             echo "<td><font color=\"purple\"><a href=\"?buy=1&buyslug=$coini\"><span class=\"badge badge-pill badge-light\">Buy</span></a> $coino <a href=\"?sell=1&sellslug=$coini\"><span class=\"badge badge-pill badge-light\">Sell</span></a></td>";
             echo "<td><font color=\"green\">$$coino_total</font></td>";
@@ -69,9 +67,6 @@ function noshow($params) {
             echo "<td><font color=\"white\">$showdata_humantime</font></td>";
 
             echo "</tr>";
-
-
-
 
 }
       }
