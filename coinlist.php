@@ -11,33 +11,15 @@ ini_set('display_errors', '0');
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="-1">
 </head>
-
 <body>
 
 <?php 
 
 include "header.php"; 
 
-
 // update coin shares
 $update = $_GET["stotal"];
 $slug = $_GET["slug"];
-/*
-
-removed for now 
-
-
-if (!$update) {
-// nothing to do here... yet.
-} else {
-
-$mysqli_crawl = DB::queryRaw("UPDATE coinlist SET owned='$update' WHERE slug='$slug'");
-
-echo "<hr />Shares now: <strong><font color=\"purple\">$update</font></strong> for $slug<hr />";
-
-}// end of updating coin shares
-
-*/
 
 $sell = $_GET["sell"];
 $sellslug = $_GET["sellslug"];
@@ -57,15 +39,15 @@ DB::$throw_exception_on_error = "true";
         $sellprice_output = $sellprice["priceusd"];
         $sell_now = $sellprice_output * $sell;
 
-    $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $sellslug);
-    $owned = $mysqli_owned->fetch_assoc();
-    $cash_output = $owned["cash"];
-    $owned_now = $owned["owned"];
-    $owned_final = $owned_now - $sell;
-    $cash_now = $cash_output + $sell_now;
+        $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $sellslug);
+        $owned = $mysqli_owned->fetch_assoc();
+        $cash_output = $owned["cash"];
+        $owned_now = $owned["owned"];
+        $owned_final = $owned_now - $sell;
+        $cash_now = $cash_output + $sell_now;
 
-    $mysqli_owned_update = DB::query("UPDATE coinlist SET owned=%i WHERE slug=%s", $owned_final, $sellslug);
-    $mysqli_cash_update = DB::query("UPDATE coinlist SET cash=%i WHERE slug=%s", $cash_now, $sellslug);
+        $mysqli_owned_update = DB::query("UPDATE coinlist SET owned=%i WHERE slug=%s", $owned_final, $sellslug);
+        $mysqli_cash_update = DB::query("UPDATE coinlist SET cash=%i WHERE slug=%s", $cash_now, $sellslug);
     
 ?>
 <br /><center>
@@ -101,15 +83,15 @@ try {
       $buyprice_output = $buyprice["priceusd"];
       $buy_now = $buyprice_output * $buy;
 
-  $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $buyslug);
-  $owned = $mysqli_owned->fetch_assoc();
-  $owned_now = $owned["owned"];
-  $cash_output = $owned["cash"];
-  $cash_now = $cash_output - $buy_now;
-  $owned_final = $owned_now + $buy;
+      $mysqli_owned = DB::queryRaw("SELECT owned,cash from coinlist where slug=%s", $buyslug);
+      $owned = $mysqli_owned->fetch_assoc();
+      $owned_now = $owned["owned"];
+      $cash_output = $owned["cash"];
+      $cash_now = $cash_output - $buy_now;
+      $owned_final = $owned_now + $buy;
 
-  $mysqli_owned_update = DB::query("UPDATE coinlist SET owned=%i WHERE slug=%s", $owned_final, $buyslug);
-  $mysqli_cash_update = DB::query("UPDATE coinlist SET cash=%i WHERE slug=%s", $cash_now, $buyslug);
+      $mysqli_owned_update = DB::query("UPDATE coinlist SET owned=%i WHERE slug=%s", $owned_final, $buyslug);
+      $mysqli_cash_update = DB::query("UPDATE coinlist SET cash=%i WHERE slug=%s", $cash_now, $buyslug);
   
 ?>
 <br /><center>

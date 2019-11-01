@@ -17,7 +17,7 @@ Thanks to MeekroDB and Coin Gecko.
 
 ![alt text](https://urcpu.com/~snick/h.png "CMI")
 
-Version 0.1.6.1011
+Version 0.2.7.1050
 
 ..._more features on the way, checkout the testing branch when it's available_
 
@@ -32,8 +32,11 @@ Before running mdie PHP, curl and MySQL should be installed.
 
 1. Clone/Download all files. 
 2. Copy to /var/www/html
-3. Run prep.php in the web browser.
-4. Set a cron to execute every minute. `*/1 * * * * curl "http://127.0.0.1/mdie/crawl.php"`
+3. Download coin logo pack: `wget https://urcpu.com/coin_images.tar.gz`
+4. Run prep.php in the web browser.
+5. Set a cron to execute every minute. `*/1 * * * * curl "http://127.0.0.1/mdie/crawl.php"`
+
+For detailed install visit the [wiki here](https://github.com/snick512/cryptomarketindexer/wiki/Installing-and-Configuring).
 
 ***API limits are limited to 100 per minute***
 

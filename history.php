@@ -35,6 +35,7 @@ try {
   $crawl = $showdata['crawl'];
   $cash = $showdata['cash'];
   $exchange = $showdata['exchange'];
+  $image = $showdata["infoimage"];
 
   $mysqli_exchange = DB::queryRaw("SELECT * FROM exchanges WHERE exchange=%s", $exchange);
   $mysqli_exchange_a = $mysqli_exchange->fetch_assoc();
@@ -52,10 +53,12 @@ try {
 <div class="card border-warning mb-3" style="max-width: 90%;">
 <h3 class="card-header"><?php echo "$f_name"; ?></h3>
 <div class="card-body">
-  <h5 class="card-title">$<?php echo number_format($cash); ?></h5>
-  <h6 class="card-subtitle text-muted"></h6>
+  <h5 class="card-title"></h5>
+  <h6 class="card-subtitle text-muted">$<?php echo number_format($cash); ?></h6>
 </div>
  
+<img src="mdie/images/coins/<?php echo "$image"; ?>" width="100px"> <br />
+
  
 <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
 
@@ -91,10 +94,20 @@ try {
 
 
 
+<br />
+    <div align="center" id="output">
+      <div
+      class="progress-bar progress-bar-striped progress-bar-animated"
+      role="progressbar"
+      aria-valuenow="95"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: 75%">
+    Loading ... Please allow a few minutes to populate after any changes.</div>
+    </div>
 
 
-
-  <div id="output"></div>
+  <!--<div id="output"></div>-->
     <hr />
 
 
