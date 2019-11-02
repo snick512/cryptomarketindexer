@@ -2,18 +2,15 @@
 require_once "meekrodb.php";
 include "connect.php";
 ini_set('display_errors', '0');
-//setlocale(LC_MONETARY, 'en_US');
 date_default_timezone_set('America/New_York');
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
-$coin = urldecode($_GET["c"]);
-#$dbtable = str_ireplace("-", "_", $coini);
+$coin = $_GET["c"];
 
 $dbcoin = str_ireplace("-", "_", $coin); // replace -s with _s.
-
 
 
 DB::$error_handler = "coinnull";
@@ -26,6 +23,7 @@ try {
   $mysqli_result = DB::queryRaw("SELECT * FROM coinlist WHERE slug=%s", $coin);
   $showdata = $mysqli_result->fetch_assoc();
   $f_name = $showdata['name'];
+  $f_logo = $showdata['infoimage'];
 
 } catch (MeekroDBException $e) {
   // code.
@@ -55,7 +53,7 @@ try {
         $humantime = $humantime_r->format('h:i A');
             
 
-        echo "<td><font color=\"orange\">$f_name</font></td>";
+        echo "<td><img src=\"mdie/images/coins/$f_logo\" width=\"25px\"> <font color=\"orange\">$f_name</font></td>";
         echo "<td><font color=\"gray\">$pair</font></td>";
         echo "<td><font color=\"green\">$pricebtc</font></td>";
         echo "<td><font color=\"orange\">$priceeth</font></td>";
