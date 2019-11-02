@@ -15,13 +15,13 @@ Thanks to MeekroDB and Coin Gecko.
 * Add/remove coins
 * Basic share management (buy/sell)
 
-![alt text](https://urcpu.com/~snick/h.png "CMI")
+![alt](https://urcpu.com/~snick/h.png "CMI")
 
 Version 0.2.7.1050
 
 _Checkout Testing branch_
 
-![alt text](https://urcpu.com/~snick/alertstocards.png "CMI")
+![alt](https://urcpu.com/~snick/alertstocards.png "CMI")
 
 # Requirements
 
