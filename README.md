@@ -21,6 +21,8 @@ Version 0.2.7.1050
 
 _Checkout Testing branch_
 
+![alt text](https://urcpu.com/4.png "CMI")
+
 # Requirements
 
 **PHP**, **curl** and **MySQL** are required.
