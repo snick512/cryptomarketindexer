@@ -3,9 +3,6 @@
 include "mdie/meekrodb.php";
 ini_set('display_errors', '0');
 $go = $_GET["c"];
-//$go_sql = DB::queryRaw("SELECT * FROM coinlist WHERE name=%s", $goto);
-//$go_sql_a = $go_sql->fetch_assoc();
-//$go = $go_sql_a['slug'];
 ?>
 <html>
 <head>
@@ -62,12 +59,8 @@ try {
  
 <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
 
-
 <p align="center"><coingecko-coin-price-chart-widget  coin-id="<?php echo "$pass";?>" currency="usd" height="300" width="50%" locale="en"></coingecko-coin-price-chart-widget></p>
 
-
-
-<!--<img style="height: 200px; width: 100%; display: block;" src="" alt="Card image">-->
 <div class="card-body">
   <p class="card-text"></p>
 </div>
@@ -106,11 +99,7 @@ try {
     Loading ... Please allow a few minutes to populate after any changes.</div>
     </div>
 
-
-  <!--<div id="output"></div>-->
     <hr />
-
-
 
 <script>
 setInterval(function(){
