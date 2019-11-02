@@ -3,7 +3,7 @@
 **Cryptocurrency Market Indexer is an old-fashioned crawler which asks services about their data and then stores it. From there, any application can access the SQL data and even update it.**
 
 
-![alt text](https://urcpu.com/~snick/m.png "CMI")
+![alt text](https://urcpu.com/1.png "CMI")
 
 **Meant to be used on private net**
 
@@ -15,13 +15,13 @@ Thanks to MeekroDB and Coin Gecko.
 * Add/remove coins
 * Basic share management (buy/sell)
 
-![alt text](https://urcpu.com/~snick/h.png "CMI")
+![alt text](https://urcpu.com/2.png "CMI")
 
 Version 0.2.7.1050
 
 _Checkout Testing branch_
 
-![alt text](https://urcpu.com/~snick/alertstocards.png "CMI")
+![alt text](https://urcpu.com/4.png "CMI")
 
 # Requirements
 
