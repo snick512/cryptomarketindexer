@@ -55,16 +55,11 @@ try {
   <h5 class="card-title">$<?php echo number_format($cash); ?></h5>
   <h6 class="card-subtitle text-muted"></h6>
 </div>
- 
- 
+  
 <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
-
 
 <p align="center"><coingecko-coin-price-chart-widget  coin-id="<?php echo "$pass";?>" currency="usd" height="300" width="50%" locale="en"></coingecko-coin-price-chart-widget></p>
 
-
-
-<!--<img style="height: 200px; width: 100%; display: block;" src="" alt="Card image">-->
 <div class="card-body">
   <p class="card-text"></p>
 </div>
@@ -84,19 +79,8 @@ try {
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
   <div id="output"></div>
     <hr />
-
 
 
 <script>
