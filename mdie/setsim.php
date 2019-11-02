@@ -49,7 +49,6 @@ DB::$throw_exception_on_error = "true";
 
     $mysqli_owned = DB::query("UPDATE coinlist SET owned=%i WHERE slug=%s", 1000, $c);
     $mysqli_cash = DB::query("UPDATE coinlist SET cash=%i WHERE slug=%s", "10000", $c);
-    $mysqli_profit = DB::query("UPDATE coinlist SET profit=%i WHERE slug=%s", "0.00", $c);
   } catch (MeekroDBException $e) {
     //
   }
