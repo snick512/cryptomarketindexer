@@ -17,7 +17,7 @@ Thanks to MeekroDB and Coin Gecko.
 
 ![alt text](https://urcpu.com/3.png "CMI")
 
-Version 0.2.7.1050
+Version 0.2.7.1057
 
 _Checkout Testing branch_
 
