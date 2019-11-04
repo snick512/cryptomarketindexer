@@ -53,6 +53,8 @@ Bitcoin: bc1q579rgt49j577kmmtf3zcxdt476yhs8hezjuqf7
 
 DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 
+Or: [Donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NGF8PZ7V2TAE6&source=url)
+
 
 ### Todo:
 
