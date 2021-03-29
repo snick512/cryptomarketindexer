@@ -20,7 +20,8 @@ Started Monday March 29, 2021
 
 Todo: 
 1) Price and associated exchange
-2) Short/Long History
+2) Short/Long History with timeframe selection
+3) Exchange selection
 
 
 */ 
