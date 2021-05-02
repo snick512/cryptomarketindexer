@@ -15,6 +15,15 @@ Thanks to MeekroDB and Coin Gecko.
 * Add/remove coins
 * Basic share management (buy/sell)
 
+
+# Help
+* [Installing and Configuring](https://github.com/snick512/cryptomarketindexer/wiki/Installing-and-Configuring)
+* [Upgrading](https://github.com/snick512/cryptomarketindexer/wiki/Upgrading-from-0.1.6-to-0.2.7)
+* [Portfolio](https://github.com/snick512/cryptomarketindexer/wiki/Portfolio)
+* [Adding/Removing coins](https://github.com/snick512/cryptomarketindexer/wiki/Manipuatling-Coinlist-table)
+* [Set Simulator](https://github.com/snick512/cryptomarketindexer/wiki/Set-Simulator)
+* [Interacting with the API](https://github.com/snick512/cryptomarketindexer/wiki/Interacting-with-the-API)
+
 ![alt text](https://urcpu.com/3.png "CMI")
 
 Version 0.2.7.1057
@@ -38,8 +47,7 @@ Before running mdie PHP, curl and MySQL should be installed.
 
 For detailed install visit the [wiki here](https://github.com/snick512/cryptomarketindexer/wiki/Installing-and-Configuring).
 
-***API limits are limited to 100 per minute***
-
+***API queries are limited to 100 per minute***
 
 ### Coin Crawling Management
 
