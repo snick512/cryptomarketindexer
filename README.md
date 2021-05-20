@@ -2,8 +2,7 @@
 
 **Cryptocurrency Market Indexer is an old-fashioned crawler which asks services about their data and then stores it. From there, any application can access the SQL data and even update it.**
 
-
-![alt text](https://urcpu.com/1.png "CMI")
+![A typical dashboard](https://cmi.urcpu.com/CMI.png "CMI")
 
 **Meant to be used on private net**
 
@@ -24,13 +23,9 @@ Thanks to MeekroDB and Coin Gecko.
 * [Set Simulator](https://github.com/snick512/cryptomarketindexer/wiki/Set-Simulator)
 * [Interacting with the API](https://github.com/snick512/cryptomarketindexer/wiki/Interacting-with-the-API)
 
-![alt text](https://urcpu.com/3.png "CMI")
-
 Version 0.2.7.1057
 
 _Checkout Testing branch_
-
-![alt text](https://urcpu.com/4.png "CMI")
 
 # Requirements
 
