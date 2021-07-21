@@ -1,6 +1,8 @@
 <?php
 include "connect.php";
 
+$c_domain = "https://127.00.1";
+
 date_default_timezone_set('America/New_York');
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -40,7 +42,7 @@ $indextime = date("Y-m-d H:i:s");
         sleep(2);
           
         //  exec('curl "http:/127.0.0.1/mdie/setsim.php?coin='.$coini.'"');
-          exec('curl "http://127.0.0.1/mdie/exchange.php?exchange='.$coinx.'&coin='.$coini.'&slug='.$coini.'"');
+          exec('curl "'.$c_domain.'/mdie/exchange.php?exchange='.$coinx.'&coin='.$coini.'&slug='.$coini.'"');
 
         }
       }
