@@ -52,7 +52,7 @@ When adding coins, you want to use the _slug_. For example, Bitcoin Silver would
 
 ### Donate
 
-Bitcoin: bc1q579rgt49j577kmmtf3zcxdt476yhs8hezjuqf7
+Bitcoin: bc1qeq8m85j72ff7vz2gdfml303j6hqcavpc56q5z7
 
 DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 
