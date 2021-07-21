@@ -3,7 +3,7 @@
 **Cryptocurrency Market Indexer is an old-fashioned crawler which asks services about their data and then stores it. From there, any application can access the SQL data and even update it.**
 
 
-![alt text](https://urcpu.com/1.png "CMI")
+![Typical Dashboard](https://cmi.urcpu.com/CMI.png "CMI")
 
 **Meant to be used on private net**
 
@@ -15,13 +15,9 @@ Thanks to MeekroDB and Coin Gecko.
 * Add/remove coins
 * Basic share management (buy/sell)
 
-![alt text](https://urcpu.com/3.png "CMI")
-
 Version 0.2.7.1057
 
 _Checkout Testing branch_
-
-![alt text](https://urcpu.com/4.png "CMI")
 
 # Requirements
 
@@ -43,13 +39,13 @@ For detailed install visit the [wiki here](https://github.com/snick512/cryptomar
 
 ### Coin Crawling Management
 
-A full coinlist of 4k+ coins can be found at https://urcpu.com/coinlist.pdf or in the www directory. Recommended to check the URL once in awhile to see if it's updated.
+A full coinlist of 4k+ coins can be found at https://cmi.urcpu.com/coinlist.pdf or in the www directory. Recommended to check the URL once in awhile to see if it's updated.
 
 When adding coins, you want to use the _slug_. For example, Bitcoin Silver would be **bitcoin-silver**
 
 ### Donate
 
-Bitcoin: bc1q579rgt49j577kmmtf3zcxdt476yhs8hezjuqf7
+Bitcoin: bc1qeq8m85j72ff7vz2gdfml303j6hqcavpc56q5z7
 
 DogeCash: DKpmukeywXMgzvkUsjmGDj9jJExBNxjTb8
 
@@ -72,7 +68,7 @@ Or: [Donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&host
 
 BSD 3-Clause License
 
-Copyright (c) 2019, Ty Clifford
+Copyright (c) 2019-2021, Ty Clifford
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
