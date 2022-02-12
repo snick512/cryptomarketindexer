@@ -75,7 +75,7 @@ Or: [Donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&host
 
 BSD 3-Clause License
 
-Copyright (c) 2019, Ty Clifford
+Copyright (c) 2019-2022, Ty Clifford
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
